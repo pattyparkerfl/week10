@@ -43,12 +43,14 @@ body {
 	.container-leftM {
   		display:none;
 	  }
-	
-	.tabletab{
+	.deskjoke{
+		display:block;
+	}
+	.tabjoke{
 		display:none;
 	}
-	.tabledesk{
-		display:block;
+	.mobilejoke{
+		display:none;
 	}
 	
 	/*top banner-navigation -menu settings for desktop*/
@@ -207,10 +209,13 @@ body {
 		overflow: hidden;
 		background-color: white;
   	}
-	.tabletab{
+	.deskjoke{
+		display:none;
+	}
+	.tabjoke{
 		display:block;
 	}
-	.tabledesk{
+	.mobilejoke{
 		display:none;
 	}
 	
@@ -289,6 +294,15 @@ body {
 		overflow: hidden;
 		background-color: white;
   	}
+	.deskjoke{
+		display:none;
+	}
+	.tabjoke{
+		display:none;
+	}
+	.mobilejoke{
+		display:block;
+	}
 /* left side container */
 .container-leftM {
 	float:left;
