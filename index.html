@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chemistry Joke of the Day</title>
+</head>
+<!--link for style sheet-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!-- For this to work on mobile, need initial scaling of 1.0 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta charset="utf-8">
+	<title>Daily Joke</title>
+	
+	
+	<script>
+	
+		window.onload = chooseJoke;
+
+var jokes = new Array("images/matter.jpg","images/atoms.jpg", "images/base.png","images/catsliquid.jpg", "images/chemists die.jpg", "images/diamond.jpg", "images/helium.jpg", "images/ions.jpg", "images/moleliter.jpg", "images/noblegas.webp","images/peerreview.jpg", "images/periodic.jpg", "images/splitatom.jpg" );
+ 
+
+
+		function chooseJoke() {
+     var randomNum = Math.floor(Math.random() * jokes.length);
+     document.getElementById("randomJoke").src = jokes[randomNum];
+		
+		}
+		
+			
+	</script>
+<body>
+	<!--this is the top banner...logo, page title and navigation for desktop-->
+	<div class="topnav">
+		<img src="images/logo1.jpg" alt ="logo">
+		<img src="images/joketitle.png" alt ="periodic table">
+  		<div class="dropdown">
+    		<button class="dropbtn">MENU 
+      			<i class="fa fa-caret-down"></i>
+    		</button>
+    		<div class="dropdown-content">
+      			<a class="active" href="https://pattyparkerfl.github.io/week3/">Home</a>
+				<a href="https://pattyparkerfl.github.io/week5/">Quiz</a>
+				<a href="https://pattyparkerfl.github.io/final/">Periodic Table Lesson</a>
+    		</div>
+  		</div> 
+	</div>
+	
+	<!--this is the top banner...logo and navigation for tablet-->
+	<div class="navtab">
+  		<div class="dropdown">
+    		<button class="dropbtn">MENU 
+      			<i class="fa fa-caret-down"></i>
+    		</button>
+    		<div class="dropdown-content">
+      			<a class="active" href="https://pattyparkerfl.github.io/week3/">Home</a>
+				<a href="https://pattyparkerfl.github.io/week5/">Quiz</a>
+				<a href="https://pattyparkerfl.github.io/final/">Periodic Table Lesson</a>
+    		</div>
+  		</div> 
+		<img src="images/pageTitle1.jpg" align = "center" width ="50%" alt ="periodic table">
+		<img src="images/logo1.jpg" align = "right" width ="30%" alt ="logo">
+	</div>
+	
+	<!--this is the top banner...logo and navigation for mobile-->
+	<div class="navmobile">
+  		<div class="dropdown-content">
+      		<a class="active" href="https://pattyparkerfl.github.io/week3/">Home</a>
+			<a href="https://pattyparkerfl.github.io/week5/">Quiz</a>
+			<a href="https://pattyparkerfl.github.io/final/">Periodic Table Lesson</a>
+    	</div>
+  		<img src="images/pageTitle1.jpg" align = "center" width ="50%" alt ="periodic table">
+		<img src="images/logo1.jpg" align = "right" width ="30%" alt ="logo">
+	</div>
+	
+	
+	<img  id="randomJoke" alt="random joke" width ="25%" align ="center">
+	
+	<!--this is the footer-->
+	<div class="footer">
+		<img src="images/logo1Sm.jpg" alt = "logo">
+	</div>
+	</body>
+</html>
